@@ -18,4 +18,4 @@ defmodule FizzBuzz do
 
 end
 
-Enum.map(1..100, &FizzBuzz.fizzbuzz/1) |> Enum.each(&IO.puts/1)
+1..100 |> Enum.map(&FizzBuzz.fizzbuzz/1) |> Enum.each(&IO.puts/1)

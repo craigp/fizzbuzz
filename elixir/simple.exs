@@ -5,4 +5,4 @@ fizzbuzz = fn
   (_, _, n) -> n
 end
 
-Enum.map(1..100, fn(n) -> fizzbuzz.(rem(n, 5), rem(n, 3), n) end) |> Enum.each(&IO.puts/1)
+1..100 |> Enum.map(fn(n) -> fizzbuzz.(rem(n, 5), rem(n, 3), n) end) |> Enum.each(&IO.puts/1)
